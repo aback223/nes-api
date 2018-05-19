@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get '/story_contents/:id', to: 'story_content#show', as: 'story_content'
   patch '/story_contents/:id', to: 'story_content#update'
   delete '/story_contents/:id', to: 'story_content#destroy' 
+
+  resources :story
 end

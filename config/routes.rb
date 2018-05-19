@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   delete '/story_contents/:id', to: 'story_content#destroy' 
 
   resources :story
+  resources :content, only: [:create, :index]
 end
